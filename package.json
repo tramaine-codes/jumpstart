@@ -36,7 +36,7 @@
     "watch": "tsc -c"
   },
   "dependencies": {
-    "liquidjs": "10.3.3",
+    "liquidjs": "10.4.0",
     "pkg-dir": "7.0.0"
   },
   "devDependencies": {
@@ -45,8 +45,8 @@
     "@faker-js/faker": "7.6.0",
     "@release-it/conventional-changelog": "5.1.1",
     "@types/node": "18.11.18",
-    "@typescript-eslint/eslint-plugin": "5.47.1",
-    "@typescript-eslint/parser": "5.47.1",
+    "@typescript-eslint/eslint-plugin": "5.48.0",
+    "@typescript-eslint/parser": "5.48.0",
     "@vitest/coverage-c8": "0.26.3",
     "del-cli": "5.0.0",
     "eslint": "8.31.0",
