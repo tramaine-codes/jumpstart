@@ -40,14 +40,14 @@
     "pkg-dir": "7.0.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "17.4.0",
+    "@commitlint/cli": "17.4.1",
     "@commitlint/config-conventional": "17.4.0",
     "@faker-js/faker": "7.6.0",
     "@release-it/conventional-changelog": "5.1.1",
     "@types/node": "18.11.18",
-    "@typescript-eslint/eslint-plugin": "5.48.0",
-    "@typescript-eslint/parser": "5.48.0",
-    "@vitest/coverage-c8": "0.26.3",
+    "@typescript-eslint/eslint-plugin": "5.48.1",
+    "@typescript-eslint/parser": "5.48.1",
+    "@vitest/coverage-c8": "0.27.1",
     "del-cli": "5.0.0",
     "eslint": "8.31.0",
     "husky": "8.0.3",
@@ -55,8 +55,8 @@
     "prettier": "2.8.2",
     "release-it": "15.6.0",
     "testdouble": "3.16.8",
-    "tsx": "3.12.1",
+    "tsx": "3.12.2",
     "typescript": "4.9.4",
-    "vitest": "0.26.3"
+    "vitest": "0.27.1"
   }
 }
