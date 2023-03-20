@@ -36,7 +36,7 @@
     "watch": "tsc -c"
   },
   "dependencies": {
-    "liquidjs": "10.6.1",
+    "liquidjs": "10.6.2",
     "pkg-dir": "7.0.0"
   },
   "devDependencies": {
