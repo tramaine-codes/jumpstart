@@ -1,7 +1,7 @@
 /* eslint-disable no-console */
-import { Package } from '../pkg/package.js';
-import { Renderer } from '../renderer/renderer.js';
-import { Templatable } from '../template/templatable.js';
+import type { Package } from '../pkg/package.js';
+import type { Renderer } from '../renderer/renderer.js';
+import type { Templatable } from '../template/templatable.js';
 
 interface SynthesizerProps {
   configFiles: Templatable[];
@@ -14,17 +14,14 @@ export class Synthesizer {
     private readonly props: SynthesizerProps
   ) {}
 
-  synth() {
+  synth = () => {
     const { configFiles } = this.props;
 
-    configFiles.forEach(({ template, data }) => {
-      const templatePath = this.templatePath(template);
+    for (const { data, template } of configFiles) {
+      console.log(this.renderer.render(this.templatePath(template), data));
+    }
+  };
 
-      console.log(this.renderer.render(templatePath, data));
-    });
-  }
-
-  private templatePath(template: string) {
-    return `${this.pkg.rootDir()}/templates/${template}.liquid`;
-  }
+  private templatePath = (template: string) =>
+    `${this.pkg.rootDir()}/templates/${template}.liquid`;
 }

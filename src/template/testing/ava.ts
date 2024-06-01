@@ -1,4 +1,4 @@
-import { Templatable } from '../templatable.js';
+import type { Templatable } from '../templatable.js';
 
 export class Ava implements Templatable {
   readonly filename = 'ava.config.js';

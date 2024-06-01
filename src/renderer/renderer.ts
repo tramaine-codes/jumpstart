@@ -1,3 +1,3 @@
 export interface Renderer {
-  render(template: string, data?: { [k: string]: unknown }): string;
+  render(template: string, data?: Record<string, unknown>): string;
 }

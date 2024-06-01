@@ -1,4 +1,4 @@
-import { Templatable } from '../../templatable.js';
+import type { Templatable } from '../../templatable.js';
 
 export class Eslint implements Templatable {
   readonly filename = '.eslintrc.cjs';

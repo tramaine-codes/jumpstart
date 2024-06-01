@@ -1,41 +1,7 @@
 {
-  "name": "@triviumsoftware/{{ name }}",
-  "type": "module",
-  "version": "0.0.0",
-  "description": "",
   "author": "Tramaine L. Gillus",
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:tgillus/{{ name }}.git"
-  },
-  "license": "MIT",
-  "engines": {
-    "node": ">=14.16"
-  },
-  "main": "./lib/index.js",
-  "types": "./lib/index.d.ts",
-  "files": [
-    "/lib"
-  ],
-  "publishConfig": {
-    "access": "public"
-  },
-  "scripts": {
-    "build": "npm run clean && npm run barrels && npm test && tsc",
-    "build:ci": "npm run clean && npm test && tsc",
-    "clean": "del ./lib ./coverage",
-    "format": "prettier . --write",
-    "lint": "eslint . --ext .js,.ts",
-    "lint:fix": "eslint . --ext .js,.ts --fix",
-    "prepack": "npm run build",
-    "prepare": "husky install",
-    "release": "release-it --ci",
-    "test": "ava",
-    "test:cov": "c8 ava",
-    "test:watch": "ava --watch",
-    "watch": "tsc -c"
-  },
   "dependencies": {},
+  "description": "",
   "devDependencies": {
     "@commitlint/cli": "17.0.3",
     "@commitlint/config-conventional": "17.0.3",
@@ -54,5 +20,39 @@
     "testdouble": "3.16.6",
     "tsx": "3.8.0",
     "typescript": "4.7.4"
-  }
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "files": [
+    "/lib"
+  ],
+  "license": "MIT",
+  "main": "./lib/index.js",
+  "name": "@triviumsoftware/{{ name }}",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:tgillus/{{ name }}.git"
+  },
+  "scripts": {
+    "build": "npm run clean && npm run barrels && npm test && tsc",
+    "build:ci": "npm run clean && npm test && tsc",
+    "clean": "del ./lib ./coverage",
+    "format": "prettier . --write",
+    "lint": "eslint . --ext .js,.ts",
+    "lint:fix": "eslint . --ext .js,.ts --fix",
+    "prepack": "npm run build",
+    "prepare": "husky install",
+    "release": "release-it --ci",
+    "test": "ava",
+    "test:cov": "c8 ava",
+    "test:watch": "ava --watch",
+    "watch": "tsc -c"
+  },
+  "type": "module",
+  "types": "./lib/index.d.ts",
+  "version": "0.0.0"
 }
