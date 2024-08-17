@@ -2,7 +2,7 @@
   "name": "@triviumsoftware/jumpstart",
   "type": "module",
   "version": "0.0.0",
-  "description": "",
+  "description": "Jumpstart is a small, simple project generator based on my personal preferences.",
   "author": "Tramaine L. Gillus",
   "repository": {
     "type": "git",
@@ -10,7 +10,8 @@
   },
   "license": "MIT",
   "engines": {
-    "node": ">=14.16"
+    "node": ">=18",
+    "npm": ">=10"
   },
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
@@ -36,27 +37,27 @@
     "watch": "tsc -c"
   },
   "dependencies": {
-    "liquidjs": "10.14.0",
+    "liquidjs": "10.16.3",
     "pkg-dir": "8.0.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "19.3.0",
+    "@commitlint/cli": "19.4.0",
     "@commitlint/config-conventional": "19.2.2",
     "@faker-js/faker": "8.4.1",
     "@release-it/conventional-changelog": "8.0.1",
     "@types/node": "20.14.8",
-    "@typescript-eslint/eslint-plugin": "7.13.1",
-    "@typescript-eslint/parser": "7.13.1",
-    "@vitest/coverage-v8": "1.6.0",
+    "@typescript-eslint/eslint-plugin": "8.1.0",
+    "@typescript-eslint/parser": "8.1.0",
+    "@vitest/coverage-v8": "2.0.5",
     "del-cli": "5.1.0",
     "eslint": "8.57.0",
-    "husky": "9.0.11",
-    "lint-staged": "15.2.7",
-    "prettier": "3.3.2",
-    "release-it": "17.4.0",
+    "husky": "9.1.4",
+    "lint-staged": "15.2.9",
+    "prettier": "3.3.3",
+    "release-it": "17.6.0",
     "testdouble": "3.20.2",
-    "tsx": "4.15.7",
-    "typescript": "5.5.2",
-    "vitest": "1.6.0"
+    "tsx": "4.17.0",
+    "typescript": "5.5.4",
+    "vitest": "2.0.5"
   }
 }
